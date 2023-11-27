@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thiết lập các thông tin về trang web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS</title>
+
+    <!-- Liên kết tệp CSS để trang web hiển thị đúng -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Liên kết đến font chữ cho trò chơi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Phần thân của trang web -->
+<div class="container">
+    <!-- Đây là nơi vẽ trò chơi Tetris -->
+    <canvas id="board"></canvas>
+
+    <!-- Cột bên phải của trang web, chứa điểm số và nút chơi -->
+    <div class="side-bar">
+        <div>
+            <!-- Tiêu đề của trò chơi -->
+            <h1>TETRIS</h1>
+            <h6>Made by SonBeo</h6>
+            <!-- Hiển thị điểm số -->
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <!-- Nút bắt đầu trò chơi -->
+        <button class="play-btn" id="play">Play</button>
+    </div>
+</div>
+
+<!-- Liên kết đến tệp script JavaScript cho trò chơi -->
+<script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Áp dụng font chữ 'Press Start 2P' cho tất cả các phần tử trong trang */
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Thiết lập màu nền cho body của trang */
+body {
+    background-color: #e6e6e6;
+}
+
+/* Định dạng layout cho phần container */
+.container {
+    display: grid;
+    grid-template-columns: 320px 200px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Định dạng layout cho cột bên phải (side-bar) */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Thiết lập viền cho phần vẽ trò chơi (board) */
+#board {
+    border: 2px solid black;
+}
+
+/* Thiết lập style cho nút chơi (play-btn) */
+.play-btn {
+    background-color: greenyellow;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
